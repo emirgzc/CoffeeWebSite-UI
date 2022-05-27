@@ -1,0 +1,19 @@
+  <section class="menu" style="margin: 120px 0px;" id="menu">
+
+    <h1 class="heading"> MENÜLERİMİZ <span></span> </h1>
+
+    <div class="box-container">
+
+        {{#each menu}}
+
+        <div class="box">
+            <img src="{{image}}" alt="" style="border-radius: 50%;">
+            <h3>{{title}}</h3>
+            <div class="price">{{price}} <span>{{priceOld}}</span></div>
+            <a href="#" class="btn">İncele</a>
+        </div>
+
+        {{/each}}
+    </div>
+
+</section>

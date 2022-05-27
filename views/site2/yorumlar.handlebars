@@ -1,0 +1,27 @@
+ <section class="yorumlar" style="margin: 120px 0px;" id="yorumlar">
+
+    <h1 class="heading"> MÜŞTERİ <span>MEMNUNİYETİ</span> </h1>
+
+    <div class="box-container">
+
+        {{#each yorum}}
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>{{content}}</p>
+            <img src="{{image}}" class="user" alt="">
+            <h3>{{title}}</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</section>

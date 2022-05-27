@@ -1,0 +1,25 @@
+  <section class="bloglar" style="margin: 120px 0px;" id="bloglar">
+
+    <h1 class="heading"><span>Bloglar</span> </h1>
+
+    <div class="box-container">
+
+        {{#each blog}}
+
+        <div class="box">
+            <div class="image">
+                <img src="{{image}}" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">{{title}}</a>
+                <span>{{date}}</span>
+                <p>{{content}}</p>
+                <a href="#" class="btn">Devamını Oku</a>
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</section>

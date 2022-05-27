@@ -1,0 +1,35 @@
+  <section class="urunlerimiz" style="margin: 120px 0px;" id="urunlerimiz">
+
+    <h1 class="heading"> BİZİM <span>ÜRÜNLERİMİZ</span> </h1>
+
+    <div class="box-container">
+
+        {{#each urun}}
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image" >
+                <img src="{{image}}" alt="" style="width: 370px; object-fit: cover;">
+            </div>
+            <div class="content">
+                <h3>{{title}}</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">{{price}} <span>{{priceOld}}</span></div>
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</section>
